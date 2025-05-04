@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Halaman Proyek</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Header dengan background biru dan teks putih, rata tengah, dan padding atas-bawah -->
   <header class="bg-primary text-white text-center py-4">
     <h1>Halaman Proyek</h1>
-    <p class="lead">Kumpulan proyek saya</p>
+    <p class="lead">Kumpulan proyek saya</p> <!-- Teks deskriptif lebih menonjol -->
   </header>
 
+  <!-- Navigasi biasa (bukan Bootstrap) -->
   <nav>
     <ul>
       <li><a href="index.html">Tentang Saya</a></li>
@@ -21,16 +24,21 @@
     </ul>
   </nav>
 
+  <!-- Container Bootstrap untuk membungkus isi dengan padding -->
   <main class="container my-4">
+    <!-- Grid Bootstrap: 1 kolom di kecil, 3 kolom di medium ke atas, dengan jarak antar kolom -->
     <div class="row row-cols-1 row-cols-md-3 g-4">
 
+      <!-- Kolom Bootstrap -->
       <div class="col">  
+        <!-- Card Bootstrap: kotak dengan border biru muda -->
         <div class="card h-100 border-info">
- <picture>
-                <source srcset="html.jpeg" media="(max-width: 600px)" />
-                <source srcset="html.jpeg" media="(max-width: 1024px)" />
-                <img src="html.jpeg" class="card-img-top img-fluid" alt="CSS Ilustrasi" />
-              </picture>
+          <picture>
+            <source srcset="html.jpeg" media="(max-width: 600px)" />
+            <source srcset="html.jpeg" media="(max-width: 1024px)" />
+            <!-- Gambar responsif -->
+            <img src="html.jpeg" class="card-img-top img-fluid" alt="CSS Ilustrasi" />
+          </picture>
           <div class="card-body">
             <h5 class="card-title">HTML</h5>
             <p class="card-text">HTML adalah bahasa markup yang digunakan untuk menyusun struktur halaman web.</p>
@@ -38,6 +46,7 @@
         </div>
       </div>
 
+      <!-- Kolom kedua -->
       <div class="col">
         <div class="card h-100 border-info">
           <picture>
@@ -51,13 +60,15 @@
           </div>
         </div>
       </div>
-<div class="col">
+
+      <!-- Kolom ketiga -->
+      <div class="col">
         <div class="card h-100 border-info">
-            <picture>
-                <source srcset="java.jpeg" media="(max-width: 600px)" />
-                <source srcset="java.jpeg" media="(max-width: 1024px)" />
-                <img src="java.jpeg" class="card-img-top img-fluid" alt="CSS Ilustrasi" />
-              </picture>
+          <picture>
+            <source srcset="java.jpeg" media="(max-width: 600px)" />
+            <source srcset="java.jpeg" media="(max-width: 1024px)" />
+            <img src="java.jpeg" class="card-img-top img-fluid" alt="CSS Ilustrasi" />
+          </picture>
           <div class="card-body">
             <h5 class="card-title">Java</h5>
             <p class="card-text">Java adalah bahasa pemrograman berorientasi objek dan multi-platform.</p>
@@ -68,6 +79,7 @@
     </div>
   </main>
 
+  <!-- Footer Bootstrap: latar biru, teks putih, rata tengah -->
   <footer class="bg-primary text-white text-center py-3">
     <p>&copy; 2025 dari achel</p>
   </footer>
